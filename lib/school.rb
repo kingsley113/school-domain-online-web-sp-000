@@ -31,6 +31,6 @@ class School
       @roster.fetch(grade).sort
     end
 
-    @roster.sort
+    @roster
   end
 end
