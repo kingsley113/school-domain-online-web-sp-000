@@ -30,8 +30,7 @@ class School
       #binding.pry
       @roster.fetch(grade).sort
     end
-    @roster.to_h
-    @roster.sort
+    @roster.sort.to_h
     #@roster.sort_by {|grade, names| grade}
   end
 end
