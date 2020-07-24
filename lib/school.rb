@@ -28,7 +28,7 @@ class School
   def sort
     @roster.each_key do |grade|
       #binding.pry
-      @roster[grade] = @roster.fetch(grade).sort
+      @roster.fetch(grade).sort!
     end
     @roster.sort.to_h
     #@roster.sort_by {|grade, names| grade}
