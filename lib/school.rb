@@ -8,11 +8,11 @@ class School
     @roster = {}
   end
 
+
   def name
     @name
   end
-
-
+  
 
   def add_student(name, grade)
     if !@roster.key?(grade)
@@ -21,16 +21,16 @@ class School
     @roster[grade] << name
   end
 
+
   def grade(grade)
     @roster.fetch(grade)
   end
 
+
   def sort
     @roster.each_key do |grade|
-      #binding.pry
       @roster.fetch(grade).sort!
     end
     @roster.sort.to_h
-    #@roster.sort_by {|grade, names| grade}
   end
 end
