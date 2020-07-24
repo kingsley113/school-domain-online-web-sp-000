@@ -31,6 +31,6 @@ class School
       @roster.fetch(grade).sort
     end
 
-    @roster.sort
+    @roster.sort_by {|grade, names| grade}
   end
 end
