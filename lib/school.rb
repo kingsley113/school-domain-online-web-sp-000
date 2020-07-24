@@ -27,6 +27,7 @@ class School
 
   def sort
     @roster.each do |grade|
+      binding.pry
       @roster.fetch(grade).sort
     binding.pry
   end
