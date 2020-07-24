@@ -26,8 +26,9 @@ class School
   end
 
   def sort(grade)
-    sorted_roster = @roster[grade]
-    binding.pry
-    @roster[grade] = sorted_roster.sort
+    @roster.sort
+    #sorted_roster = @roster[grade]
+    #binding.pry
+    #@roster[grade] = sorted_roster.sort
   end
 end
