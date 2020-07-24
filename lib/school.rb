@@ -29,9 +29,8 @@ class School
     @roster.each do |grade|
       binding.pry
       @roster.fetch(grade).sort
-    binding.pry
-  end
-    @roster
+    end
+    @roster.sort
     #sorted_roster = @roster[grade]
     #binding.pry
     #@roster[grade] = sorted_roster.sort
