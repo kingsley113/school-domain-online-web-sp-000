@@ -26,7 +26,7 @@ class School
   end
 
   def sort
-    @roster.each.sort
+    @roster.each {|grade| @roster.fetch(grade).sort}
     binding.pry
     @roster
     #sorted_roster = @roster[grade]
