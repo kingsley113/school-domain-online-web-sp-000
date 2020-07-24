@@ -26,10 +26,10 @@ class School
   end
 
   def sort
-    #@roster.each do |grade|
+    @roster.each do |grade|
       @roster.fetch(grade).sort
     binding.pry
-  #end
+  end
     @roster
     #sorted_roster = @roster[grade]
     #binding.pry
