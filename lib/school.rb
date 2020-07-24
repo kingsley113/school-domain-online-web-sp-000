@@ -27,6 +27,7 @@ class School
 
   def sort
     @roster.each.sort
+    binding.pry
     @roster
     #sorted_roster = @roster[grade]
     #binding.pry
